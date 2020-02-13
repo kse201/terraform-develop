@@ -1,0 +1,5 @@
+config.yml
+*.json
+*.tfstate*
+.vagrant
+.terraform
