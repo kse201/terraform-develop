@@ -3,7 +3,7 @@ resource "aws_vpc" "vpc" {
   enable_dns_support   = true
   enable_dns_hostnames = true
 
-  tags {
+  tags = {
     Name = "${var.name}"
   }
 }
@@ -13,7 +13,7 @@ resource "aws_subnet" "main" {
   cidr_block              = "${var.cidr_block}"
   map_public_ip_on_launch = true
 
-  tags {
+  tags = {
     Name = "main"
   }
 }

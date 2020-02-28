@@ -18,7 +18,7 @@ resource "aws_security_group" "ssh" {
 
   vpc_id = "${module.vpc.id}"
 
-  tags {
+  tags = {
     Name = "SSH"
   }
 
